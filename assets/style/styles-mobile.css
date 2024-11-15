@@ -1,0 +1,347 @@
+@charset "UTF-8";
+
+@media (max-width: 767px) {
+    html {
+        min-width: 300px; /* 最小幅300pxに設定 */
+        width: 100%; /* 画面幅いっぱいに設定 */
+        margin: 0; /* マージンをリセット */
+        padding: 0; /* パディングをリセット */
+    }
+
+    body {
+        width: 100%; /* 画面幅いっぱいに設定 */
+        margin: 0; /* マージンをリセット */
+        padding: 0; /* パディングをリセット */
+    }
+    
+    .wrapper {
+        padding: 0 16px; /* 画面幅が767px以下の場合の内側の余白を設定 */
+    }
+
+    .top {
+        width: 100%;
+        height: 70px;
+    }
+
+    .top__wrapper {
+        padding: 0 0 0 16px;
+    }
+
+    .top__title-text {
+        font-size: 22px;
+    }
+
+    .top__menu {
+        display: none; /* メニューを非表示 */
+        background-color: rgb(0,91,172);
+        width: 100%;
+        height: 331px;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        z-index: 3;
+    }
+
+    .top__nav {
+        width: 100%;
+    }
+
+    .top__nav-list {
+        width: 100%;
+    }
+
+    .top__nav-list.flex-container--space-between {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; /* 子要素を垂直方向に中央揃え */
+        padding: 0 20px;
+    }
+
+    .list-content {
+        width: 100%;
+        height: 47px;
+        font-size: 18px;
+        font-family: 'Noto Sans Japanese', sans-serif;
+        font-weight: 550;
+        color: white;
+        margin-top: 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    }
+
+    .list-content::before {
+        content: "→ ";
+        font-size: 20px;
+        color: white;
+    }
+
+    .top__menu.active {
+        display: block; /* ハンバーガークリックでメニュー表示 */
+    }
+    
+    .top__cta-signup {
+        width: 350px; /* 幅を設定 */
+        height: 66px; /* 高さを設定 */
+        margin: 32px auto; /* 中央揃え */
+    }
+
+    .top__menu .cta-signup {
+        background: white;
+    }
+
+    .top__cta-signup .cta-signup__link {
+        font-size: 18px;
+        color: rgb(0,91,172);
+    }
+
+    .hamburger {
+        display: flex; /* ハンバーガーボタンを表示 */
+    }
+
+    .section01 {
+        margin-top: -35px;
+        height: 250px;
+    }
+
+    .section01__img {
+        width: 100%;
+        max-width: 100%;
+        height: 250px;
+        overflow: hidden; /* 子要素がはみ出ないように隠す */
+        position: relative; /* 必要に応じてポジション設定 */
+    }
+    
+    .img-large {
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        object-fit: cover; /* アスペクト比を維持しながら親要素に収まるように拡大 */
+    }
+
+    .section01__inner {
+        top: 34px;
+        left: 16px; 
+        width: 175px; /* 幅を25%に設定 */
+        height: 181px;
+    }
+
+    .feature__head {
+        width: 147.25px; /* 幅を21%に設定 */
+        height: 68.65px;
+    }
+
+    .feature__head-text {
+        font-size: 11px;
+        width: 70%;
+    }
+
+    .feature__head-no {
+        font-size: 25px;
+    }
+
+    .large-text {
+        font-size: 36px;
+    }
+
+    .feature__body-head {
+        font-size: 14px;
+    }
+
+    .feature__body-foot {
+        font-size: 25px;
+    }
+
+    .support-bottun {
+        height: 168px;
+        flex-direction: column;
+        margin: 24px auto;
+    }
+
+    .buttun_support {
+        width: 250px;
+        height: 48px;
+        margin: 0 0 10px 0;
+    }
+
+    .section02 {
+        height: 1400px;
+        gap: 10px;
+    }
+
+    .section02__title {
+        height: 56px;   
+    }
+
+    .section02__container {
+        height:1370px;
+    }
+    
+    .section02__container.grit-container {
+        grid-template-columns: repeat(1, 1fr); 
+        grid-template-rows: repeat(6, 1fr); 
+        gap: 0;
+    }
+
+    .section02__container-item {
+        height: 250px;
+    }
+
+    .section02__container-item {
+        width: 84px;
+        height: 40px;
+        font-size: 24px;
+        margin: 10px 0 0 0;
+    }
+
+    .section02__container-sub-title {
+        font-size: 20px;
+        height: 29px;
+        margin-bottom: 5px;
+    }
+
+    .section02__container-description {
+        height: 121px;
+        font-size: 16px;
+    }
+
+    .grit-container01 {
+        order: 1;
+    }
+
+    .grit-container02 {
+        order: 2;
+    }
+
+    .grit-container03 {
+        order: 4;
+    }
+
+    .grit-container04 {
+        order: 3;
+    }
+
+    .grit-container05 {
+        order: 5;
+    }
+
+    .grit-container06 {
+        order: 6;
+    }
+
+    .grit-container03 .section02__container-sub-title {
+        height: 52px;
+    }
+
+    .grit-container06 .section02__container-sub-title {
+        height: 52px;
+    }
+
+    .signup {
+        height: 200px;
+        margin-top: 20px;
+    }
+
+    .signup-description {
+        width: 343px;
+        height: 48px;
+        margin: 40px auto 0 auto;
+        padding: 0 22px;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .signup-button {
+        width: 305px;
+        height: 69px;
+        margin: 0 auto;
+    }
+
+    .section03 {
+        height: 1330px;
+        margin-top: 64px;
+        margin-bottom: 50px;
+    }
+
+    .section03__title {
+        margin-bottom: 21px;
+    }
+
+    .section03__tab {
+        font-size: 18px;
+    }
+
+    .section03__contents {
+        width: 100vw;
+        height: 1210px;
+        position: relative;
+        left: calc(-50vw + 50%); /* 子要素を画面全体に広げる */
+    }
+
+    .section03__content {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0;
+    }
+
+    .section03__img01 {
+        padding: 28px 16px 0 16px;
+        max-width: 390px;
+    }
+
+    .section03__img02 {
+        padding: 28px 16px 0 16px;
+        max-width: 390px;
+    }
+
+    .section03__text {
+        margin: 12px 16px 0 16px;
+    }
+
+    .section04 {
+        width: 100%;
+        height: 511px;
+        margin: 64px auto;
+    }
+
+    .section04__title {
+        font-size: 28px;
+        margin-bottom: 24px;
+    }
+
+    .cost-table {
+        font-size: 16px;
+        margin-top: 0;
+    }
+
+    .cost-table__item--left {
+        height: 64px;
+    }
+
+    .cost-table__item--right {
+        height: 64px;
+    }
+    
+    .section05 {
+        height: 340px;
+        flex-direction: column;
+    }
+
+    .section05__container {
+        width: 100%;
+        height: auto;
+    }
+
+    .section05__img img:hover {
+        transform: scale(1.2); /* マウスオーバー時に拡大 */
+        z-index: 2;
+    }
+
+    .image-text {
+        display: none;
+    }
+
+    .section05__img02 {
+        margin-top: -3px;
+    }
+
+}

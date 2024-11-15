@@ -1,0 +1,629 @@
+@charset "UTF-8";
+
+.html {
+    scroll-behavior: smooth;
+}
+
+a:hover {
+    opacity: 0.6;
+}
+
+.wrapper {
+    max-width: 1200px; /* 最大幅を1200pxに設定 */
+    width: 100%; /* 幅を100%に設定 */
+    margin: 0 auto; /* 中央揃え */
+    padding: 0 20px; /* 内側の余白を設定 */
+}
+
+.flex-container {
+    display: flex;
+    align-items: center /* 子要素を垂直方向に中央揃え */
+}
+
+.flex-container-start{
+    display: flex;
+    align-items: flex-start 
+}
+
+.flex-container--center {
+    display: flex;
+    align-items: center; /* 子要素を垂直方向に中央揃え */
+    justify-content: center;
+}
+
+.flex-container--space-between {
+    justify-content: space-between; /* 子要素間のスペースを均等に配置 */
+}
+
+main {
+    margin-top: 101px;
+}
+
+.top {
+    position: fixed; /* 固定配置 */
+    top: 0;          /* 上から0pxの位置 */
+    left: 0;         /* 左から0pxの位置 */
+    opacity: 1;      /* 不透明度を1に設定 */
+    background-color: #ffffff; /* 背景色を設定 */
+    width: 100%;
+    height: 101px; /* 高さを101pxに設定 */
+    box-shadow: 0 2px 20px black; /* 下に影をつける */
+    margin-bottom: 10px; /* 上下の余白を追加 */
+    z-index: 1000; /* 上に来るようにz-indexを設定 */
+}
+.top__wrapper {
+    max-width: 1200px; /* 最大幅を1200pxに設定 */
+    width: 100%; /* 幅を100%に設定 */
+    margin: 0 auto; /* 中央揃え */
+    padding: 0 20px; /* 内側の余白を設定 */
+}
+
+.top__title {
+    margin-top: 28px; /* 上側の余白を28pxに設定 */
+    margin-bottom: 28px; /* 下側の余白を28pxに設定 */
+}
+
+.top__title-text {
+    font-size:  min(32px, 1.7vw); /* フォントサイズ*/
+    font-weight: bold; /* 太字に設定 */
+    font-family: 'poppins', sans-serif; /* フォントをpoppinsに設定 */
+    color: #4169E1;    
+}
+
+.hamburger {
+    display: none; /* ハンバーガーメニューを非表示 */
+    width: 70px; /* 幅を70pxに設定 */
+    height: 71px;
+    margin-top: -7px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* 子要素を垂直方向に中央揃え */
+    gap: 8px; /* 子要素間のスペースを8pxに設定 */
+    background: rgb(0,91,172);
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.hamburger span {
+    display: block;
+    width: 55%;
+    height: 4px;
+    background-color: white;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+.top__menu {
+    width: 60%;
+    gap: 5%; /* 子要素間のスペースを48pxに設定 */
+}
+
+.top__nav {
+    width: 60%;
+}
+
+.top__nav-list {
+    gap: 5%; /* 子要素間のスペースを48pxに設定 */
+}
+
+.list-content {
+    font-size: min(20px, 10px + 2vw);  /* フォントサイズを20pxに設定 */
+    font-weight: 500; /* 中程度の太さに設定 */
+    font-family: 'Noto Sans Japanese', sans-serif; /* フォントをNoto Sans Japaneseに設定 */
+}
+
+.nav-list__left {
+    width: 48%
+}
+
+.nav-list__center {
+    width: 120px
+}
+
+.nav-list__right {
+    width: 45px
+}
+
+.top__cta-signup {
+    width: 40%; /* 幅を設定 */
+    height: 40%;
+}
+
+.buttun_support {
+    width: 282px; /* 幅を設定 */
+    height: 61px;
+}
+
+.cta-signup {
+    padding: 15px 2%; /* 内側の余白を設定 */
+    margin-top: 20px; /* 上側の余白を20pxに設定 */
+    margin-bottom: 20px; /* 下側の余白を20pxに設定 */
+    background: linear-gradient(to right, #4169E1, #1E90FF); /* 青色から透明へのグラデーション */
+    display: grid;
+    place-items: center;
+    border-radius: 100px; /* 角丸を100pxに設定 */
+}
+
+.cta-signup__link {
+    font-size: min(20px, 10px + 2vw); /* フォントサイズを20pxに設定 */
+    font-weight: bold; /* 太字に設定 */
+    font-family: 'Noto Sans Japanese', sans-serif; /* フォントをNoto Sans Japaneseに設定 */
+    color: white; /* 文字色を白に設定 */
+}
+
+.section01__img {
+    width: 100%; /* 幅を100%に設定 */
+    height: 100%; /* 高さを自動調整 */
+    margin-top: -8px; /* 上のマージンを-8に設定 */
+    z-index: 1; /* 下に来るようにz-indexを設定 */
+}
+
+.section01 {
+    width: 100%; /* 幅を100%に設定 */
+    max-width:  1920px;
+    margin: 0 auto; /* 中央揃え */
+    aspect-ratio: 28 / 9; /* アスペクト比を16:9に設定 */
+    position: relative; /* 子要素がこの要素を基準に配置されるように設定 */
+}
+
+.section01__foot {
+    max-width: 1200px; /* 最大幅を1200pxに設定 */
+    width: 100%; /* 幅を100%に設定 */
+    margin: 0 auto; /* 中央揃え */
+    padding: 0 20px; /* 内側の余白を設定 */
+    height: 100%;
+}
+
+.img-large {
+    width: 100%; /* 幅を100%に設定 */
+    height: 100%; 
+}
+
+.section01__inner {
+    position: absolute; /* 子要素がこの要素を基準に配置されるように設定 */
+    top: 15%;
+    left: 20%; 
+    z-index: 2; /* 上に来るようにz-indexを設定 */
+    width: 25%; /* 幅を25%に設定 */
+    height: 65%;
+}
+
+.flex-container-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+}
+
+
+.feature__head {
+    width: 80%;
+    height: 120px;
+}
+
+.section01__icon {
+    height: 100%; /* 高さを100%に設定 */
+}
+
+.icon {
+    width: 100%;
+    height: 100%;
+}
+
+.icon--reverse {
+    transform: scaleX(-1); /* アイコンを水平反転 */
+}
+
+.feature__head-text {
+    width: 60%;
+    height: 100%;
+    font-size: min(20px, 1.04vw); /* フォントサイズを20pxに設定 */
+    font-weight: normal; /* 中程度の太さに設定 */
+    font-family: 'Noto Sans Japanese', sans-serif; /* フォントをNoto Sans Japaneseに設定 */
+    display: flex; /* Flexboxを使用 */
+    flex-direction: column; /* 縦に並べる */
+}
+
+.feature__head-no {
+    flex-grow: 1; /* 残りの高さを占有 */
+    display: flex;
+    justify-content: center; /* 水平方向に中央配置 */
+    align-items: center; /* 子要素を垂直方向に中央揃え */
+    font-size: min(54px, 2.9vw); /* フォントサイズを54pxに設定 */
+}
+.feature__body {
+    flex-grow: 1; /* 残りの高さを占有 */
+}
+
+.feature__body-head {
+    font-size: min(33px, 1.72vw); /* フォントサイズを32pxに設定 */
+    font-weight: normal; /* 太字に設定 */
+    font-family: 'Noto Sans Japanese', sans-serif; /* フォントをpoppinsに設定 */
+}
+
+.feature__body-foot {
+    flex-grow: 1;
+    font-size: min(68px, 3.5vw); /* フォントサイズを32pxに設定 */
+    font-weight: 1000; /* 太字に設定 */
+    font-family: 'Noto Sans Japanese', sans-serif; /* フォントをpoppinsに設定 */
+    color: #006699;
+}
+
+.support-bottun {
+    position: relative;
+    width: 80%;
+    height: 60px;
+    margin: -30px auto 8vh auto; 
+    z-index: 2; 
+}
+
+.cta-signup--green {
+    background: #99CC66
+}
+
+.cta-signup--orange {
+    background: #FFA500
+}
+
+.cta-signup--mint-green {
+    background: #00CC99
+}
+
+.section02 {
+    width : 100%;
+    height: 1242px;
+    gap: min(322px, 3vh);
+}
+
+.section02__title {
+    height: 8vh;
+    max-height: 86px;
+    font-size: min(36px, calc(17px + 1vw));
+    font-weight: bold;
+    font-family: 'Noto Sans Japanese', sans-serif;
+}
+
+.section02__title-accent {
+    font-size: min(54px, calc(35px + 1vw));
+    padding: 0 1px;
+    font-style: normal;
+    font-family: 'poppins', sans-serif; /* フォントをpoppinsに設定 */
+    font-weight: 800; /* ExtraBold の太さを指定 */
+    color: #FF6699;
+}
+
+.grit-container {
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(3, 1fr); 
+    gap: 3%;
+}
+
+.section02__container {
+    height: 107vh;
+}
+
+.section02__img {
+    flex: 1 1 50%;
+}
+
+.img-small {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.section02__text {
+    flex: 1 1 calc(50% - 3%);
+}
+
+.section02__container-item {
+    font-size: min(28px, calc(9px + 1vw));
+    margin: 3% 0;
+}
+
+.section02__container-accent {
+    font-size: min(42px, calc(23px + 1vw));
+    padding-left: 1%;
+}
+
+.section02__container-sub-title {
+    font-size: min(24px, calc(5px + 1vw));
+    font-weight: bold;
+    font-family: 'Noto Sans Japanese', sans-serif;
+    margin-bottom: 5%;
+}
+
+.section02__container-description {
+    font-size: min(16px, 1vw);
+    font-weight: 500;
+    font-family: 'Noto Sans Japanese', sans-serif;
+}
+
+.signup {
+    max-width: 1920px;
+    width: 100%;
+    min-width: 300px;
+    height: 23vh;
+    max-height: 230px;
+    margin-top: min(71px, 7vh);
+    margin-left: auto;
+    margin-right: auto;
+    background: rgb(255,78,78, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signup-description {
+    font-size: min(16px, 1vw);
+    font-weight: bold;
+    font-family: 'Noto Sans Japanese', sans-serif;
+    padding-top: 2.8%;
+}
+
+.signup-button {
+    width: min(300px, 16vw);
+    height: 70px;
+}
+
+
+.section03 {
+    width: 100%;
+    height: 970px;
+    margin: 5% auto;
+}
+
+.section03__title {
+    font-size: min(36px, calc(17px + 1vw));
+    font-weight: bold;
+    font-family: 'Noto Sans Japanese', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2%;
+}
+
+.section03__tabs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section03__tab {
+    width: 48.5%;
+    height: 75px;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Noto Sans Japanese', sans-serif;
+    display: flex;;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: none; 
+}
+
+.section03__tab--01 {
+    background: #F0F8FF;
+}
+
+.section03__tab--02 {
+    background: #dcdcdc;
+    opacity: 0.5;
+}
+
+.section03__contents {
+    background: #F0F8FF;
+    height: 820px;
+}
+
+.section03__content--repeat {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1%;
+}
+
+.section03__content {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 1%;
+    height: 820px;
+}
+
+
+.section03__content01 {
+    display: grid;
+}
+
+.section03__content02 {
+    display: none;
+}
+
+.section03__content-left-upper {
+    width: 100%;
+}
+
+.section03__img01 {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding: 3% 2% 3% 5% ;
+    background: #F0F8FF;
+    height: auto;
+}
+
+.section03__img02 {
+    max-width: 100%;
+    height: auto;
+    padding: 3% 5% 3% 2% ;
+    background: #F0F8FF;
+}
+
+.section03__text {
+    width: 140px;
+    height: auto;
+    margin-left: 5%;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Noto Sans Japanese', sans-serif;
+}
+
+.section03__text-02 {
+    width: 500px;
+    height: auto;
+}
+
+.section03__text::before {
+    content: "→";
+    font-size: 20px;
+    color: #3498db;
+}
+
+.background-box {
+    background: #F0F8FF;
+    width: 100%;
+    height: 20px;
+}
+
+.section04 {
+    width: 600px;
+    height: 620px;
+    margin: 70px auto;
+}
+
+.section04__title {
+    font-size: min(36px, calc(17px + 1vw));
+    font-weight: bold;
+    font-family: 'Noto Sans Japanese', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2%;
+}
+
+.cost-table {
+    width: 100%;
+    border-collapse: collapse; /* 枠線を重ねて表示 */
+    border: 5px solid #d3d3d3; /* 枠線を設定 */
+    margin-top: 25px;
+    font-size: 18px;
+    font-weight: normal; /* 太字解除 */
+    font-family: 'Noto Sans Japanese', sans-serif;
+    text-align: center; /* テキストを中央揃え */
+}
+
+.cost-table__item {
+    border: 1px solid #d3d3d3; /* 枠線を設定 */
+}
+
+.cost-table__column {
+    background: #f5f5f5;
+}
+
+.cost-table__item--left {
+    width: 20%;
+    height: 74px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+    font-weight: normal; /* 太字解除 */
+    font-family: 'Noto Sans Japanese', sans-serif;
+}
+
+.cost-table__item--right {
+    width: 80%;
+    height: 74px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+    font-weight: normal; /* 太字解除 */
+    font-family: 'Noto Sans Japanese', sans-serif;
+}
+
+.middle-text {
+    font-size: min(32px, calc(24px + 1vw));
+    font-family: 'poppins', sans-serif; /* フォントをpoppinsに設定 */
+    font-weight: 800; /* ExtraBold の太さを指定 */
+    color: #FF6699;
+}
+
+.cost-table__value--cost {
+    font-size: 18px;
+    font-weight: bold; /* 太字に設定 */
+    font-family: 'Noto Sans Japanese', sans-serif;
+    color: #FF6699;
+}
+
+.section05 {
+    max-width: 1920px;
+    width: 100%;
+    height: 317px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.section05__container {
+    width: 50%;
+    height: auto;
+    position: relative;
+}
+
+
+.section05__img img{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    transition: transform 0.3s ease; /* 拡大時のアニメーション */
+    position: relative
+}
+
+.section05__img img:hover {
+    transform: scale(1.2); /* マウスオーバー時に拡大 */
+    z-index: 2;
+}
+
+.image-text {
+    text-align: center;/* 水平方向の中央揃え */
+    position: absolute; /* 子要素がこの要素を基準に配置されるように設定 */
+    top: 50%; /* 上から50%の位置に配置 */
+    left: 35%; /* 左から50%の位置に配置 */
+    font-size: min(32px, calc(24px + 1vw));
+    font-family: 'Noto Sans Japanese', sans-serif; /* フォントをpoppinsに設定 */
+    font-weight: bold; /* ExtraBold の太さを指定 */
+    color: white;
+    z-index: 2;
+}
+.foot {
+    width: 100%;
+    max-width: 1920px;
+    height: 120px;
+    background: #d3d3d3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foot__text {
+    font-size: 13px;
+    font-weight: normal;
+    font-family: 'poppins', sans-serif;
+}
+
+.highlight { 
+    font-family: 'poppins', sans-serif; /* フォントをpoppinsに設定 */
+    font-weight: 800; /* ExtraBold の太さを指定 */
+    font-style: italic; /* イタリック体を指定 */
+    color: #0066CC;
+}
+
+.highlight--red { 
+    color: #FF6699;
+}
+
+.large-text {
+    font-size: min(74px, calc(55px + 1vw));
+}
+
