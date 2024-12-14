@@ -13,7 +13,7 @@
         margin: 0; /* マージンをリセット */
         padding: 0; /* パディングをリセット */
     }
-    
+
     .wrapper {
         padding: 0 16px; /* 画面幅が767px以下の場合の内側の余白を設定 */
     }
@@ -78,7 +78,7 @@
     .top__menu.active {
         display: block; /* ハンバーガークリックでメニュー表示 */
     }
-    
+
     .top__cta-signup {
         width: 350px; /* 幅を設定 */
         height: 66px; /* 高さを設定 */
@@ -101,6 +101,7 @@
     .section01 {
         margin-top: -35px;
         height: 250px;
+        position: relative;
     }
 
     .section01__img {
@@ -108,34 +109,44 @@
         max-width: 100%;
         height: 250px;
         overflow: hidden; /* 子要素がはみ出ないように隠す */
-        position: relative; /* 必要に応じてポジション設定 */
+        position: static;
     }
-    
+
     .img-large {
         width: 100%;
         max-width: 100%;
         height: 100%;
-        object-fit: cover; /* アスペクト比を維持しながら親要素に収まるように拡大 */
     }
 
     .section01__inner {
         top: 34px;
-        left: 16px; 
-        width: 175px; /* 幅を25%に設定 */
-        height: 181px;
+        left: 16px;
+        width: 46.6%; 
+        height: auto;
     }
 
     .feature__head {
-        width: 147.25px; /* 幅を21%に設定 */
-        height: 68.65px;
+        width: auto; 
+        height: auto;
+        display: flex;
+        gap: 0;
+    }
+
+    .section01__icon {
+        width: 27px;
+        height: auto;
+        max-height: 100%;
     }
 
     .feature__head-text {
         font-size: 11px;
-        width: 70%;
+        width: auto;
+        height: auto;
+        margin: 0;
     }
 
     .feature__head-no {
+        height: auto;
         font-size: 25px;
     }
 
@@ -143,18 +154,29 @@
         font-size: 36px;
     }
 
+    .feature__body {
+        height: auto;
+    }
+
     .feature__body-head {
+        height: auto;
         font-size: 14px;
+        margin-top: 10px;
+        line-height: 30px;
     }
 
     .feature__body-foot {
+        width: 100%;
+        height: auto;
         font-size: 25px;
+        line-height: 40px;
     }
 
     .support-bottun {
-        height: 168px;
+        height: auto;
         flex-direction: column;
         margin: 24px auto;
+        gap: 15px;
     }
 
     .buttun_support {
@@ -164,31 +186,36 @@
     }
 
     .section02 {
-        height: 1400px;
+        height: auto;
         gap: 10px;
     }
 
+    .section02__img {
+        height: auto;
+    }
+
+    .section02__text {
+        height: auto;
+    }
+
     .section02__title {
-        height: 56px;   
+        height: auto;
+        font-size: 28px;
     }
 
     .section02__container {
-        height:1370px;
+        height: auto;
     }
-    
+
     .section02__container.grit-container {
-        grid-template-columns: repeat(1, 1fr); 
-        grid-template-rows: repeat(6, 1fr); 
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
         gap: 0;
     }
 
     .section02__container-item {
-        height: 250px;
-    }
-
-    .section02__container-item {
         width: 84px;
-        height: 40px;
+        height: auto;
         font-size: 24px;
         margin: 10px 0 0 0;
     }
@@ -200,7 +227,7 @@
     }
 
     .section02__container-description {
-        height: 121px;
+        height: auto;
         font-size: 16px;
     }
 
@@ -229,11 +256,11 @@
     }
 
     .grit-container03 .section02__container-sub-title {
-        height: 52px;
+        height: auto
     }
 
     .grit-container06 .section02__container-sub-title {
-        height: 52px;
+        height: auto
     }
 
     .signup {
@@ -258,9 +285,9 @@
     }
 
     .section03 {
-        height: 1330px;
+        height: auto;
         margin-top: 64px;
-        margin-bottom: 50px;
+        margin-bottom: 63px;
     }
 
     .section03__title {
@@ -273,7 +300,7 @@
 
     .section03__contents {
         width: 100vw;
-        height: 1210px;
+        height: auto;
         position: relative;
         left: calc(-50vw + 50%); /* 子要素を画面全体に広げる */
     }
@@ -283,14 +310,18 @@
         gap: 0;
     }
 
+    .section03__content-left-upper {
+        margin-bottom: 28px;
+    }
+
     .section03__img01 {
+        width: 100%;
         padding: 28px 16px 0 16px;
-        max-width: 390px;
     }
 
     .section03__img02 {
+        width: 100%;
         padding: 28px 16px 0 16px;
-        max-width: 390px;
     }
 
     .section03__text {
@@ -320,9 +351,9 @@
     .cost-table__item--right {
         height: 64px;
     }
-    
+
     .section05 {
-        height: 340px;
+        height: auto;
         flex-direction: column;
     }
 
@@ -342,6 +373,16 @@
 
     .section05__img02 {
         margin-top: -3px;
+    }
+
+    .foot {
+        padding: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .foot__text {
+        text-align: center;
     }
 
 }

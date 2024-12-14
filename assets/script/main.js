@@ -1,4 +1,4 @@
-//main.js  
+//main.js
 
 // DOMContentLoadedイベントを使用してページが読み込まれた後に実行する
 document.addEventListener("DOMContentLoaded", function () {
@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const topMenu = document.querySelector(".top__menu");
 
     if (hamburger && topMenu) {
-        hamburger.addEventListener("click", function(event) {
+        hamburger.addEventListener("click", function (event) {
             event.stopPropagation(); // イベントの伝播を停止
             topMenu.classList.toggle("active");
         });
@@ -20,15 +20,15 @@ document.addEventListener("DOMContentLoaded", function () {
     const navLinks = document.querySelectorAll(".list-content");
     if (!navLinks) {
         console.error("navLinks element not found");
-    }else{
+    } else {
         navLinks.forEach(link => {
-            link.addEventListener("click", function() {
+            link.addEventListener("click", function () {
                 topMenu.classList.remove("active");
                 console.log('navLinks clicked');
             });
         });
     }
-    
+
 
 
 });
@@ -73,12 +73,25 @@ function showTab(tabNumber) {
     }
 }
 
-window.addEventListener("resize", function() {
+window.addEventListener("resize", function () {
     const targetElement01 = document.querySelector(".list-content");
-    
-    if (window.innerWidth < 767) {
-        targetElement01.classList.remove("classname");
-    } else {
-        targetElement01.classList.add("classname"); // 必要に応じて追加処理
-    }
+
+    // if (window.innerWidth < 767) {
+    //     targetElement01.classList.remove("classname");
+    // } else {
+    //     targetElement01.classList.add("classname"); // 必要に応じて追加処理
+    // }
+
+    // 画面の幅を取得して screenWidth に設定
+    //const screenWidth = window.innerWidth;
+    //if (screenWidth > 767) {
+        const leftValue = Math.min(0, (screenWidth - 1600) *0.6);
+
+        // カスタムプロパティに値を設定
+        //document.documentElement.style.setProperty('--left-position', `${leftValue}px`);
+    //} else {
+        // 767px以下の場合は何もしない（または他の処理を追加）
+        //document.documentElement.style.setProperty('--left-position', '0px'); // 例: 0pxにリセットする
+    //}
+
 });
